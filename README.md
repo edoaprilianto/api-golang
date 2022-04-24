@@ -201,6 +201,8 @@ and aggreagate data by Area_propinsi and showing Total , Avg , Max , Min, Median
 }
 ```
 
+## Context
+![Alt text](Context.png?raw=true "Context")
 
 
 NOTED : IF U HAVE TROUBLE "CORS" OR FAILED TO FETCH WHEN USING OPEN API, PLEASE DISABLE CORS IN YOUR BROWSER.
