@@ -7,6 +7,11 @@
 2. Running "docker-compose up"
 Noted : before running this command you must have **docker** and **docker-compose** installed in your system.
 
+3. if you have error , please run container or you can follow script below :
+   * docker-compose down
+   * docker-compose up
+   
+
 
 ## SERVICE DOCKER
 1. API -> http://localhost:9090
