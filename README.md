@@ -3,7 +3,7 @@
 🔥 Golang Rest Api with basic JWT Authentication
 
 ## Development Setup
-1. First of all create a new **.env** file in the root of the project directory. see **example.env** file for all required environment variables. After setting up environment variables, run the following command to start development and database servers.
+1. rename .example.env to .env
 2. Running "docker-compose up"
 Noted : before running this command you must have **docker** and **docker-compose** installed in your system.
 
