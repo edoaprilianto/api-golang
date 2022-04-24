@@ -9,6 +9,4 @@ RUN go mod download
 
 COPY . ./
 
-RUN go build -o /go-rest-api
-
-CMD [ "/go-rest-api" ]
+CMD [ "/code/bin/air" ]
