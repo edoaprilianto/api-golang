@@ -1,0 +1,30 @@
+UserPathResources:
+  get:
+      tags:
+        - Fetch
+      summary: Get Resources by JWT
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          $ref : "../responses/success_response.yaml"
+UserPathAggregate:
+  get:
+      tags:
+        - Fetch
+      summary: Get Aggregate by JWT
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          $ref : "../responses/success_response.yaml"
+UserPathProfile:
+  get:
+      tags:
+        - Fetch
+      summary: Get Profile by JWT
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          $ref : "../responses/success_response.yaml"

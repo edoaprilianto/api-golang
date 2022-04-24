@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: API documentation
+  version: 1.0.0
+servers:
+  - url: http://localhost:9090/
+tags:
+  - name: User
+paths:
+  /auth/signup:
+    $ref: './resources/user.yaml#/UserPath'
+  /auth/login:
+    $ref: './resources/user.yaml#/UserPathLogin'
+  /auth/profile:
+    $ref: './resources/user.yaml#/UserPathGet'
+  /fetch/resources:
+    $ref: './resources/fetch.yaml#/UserPathResources'
+  /fetch/aggregate:
+    $ref: './resources/fetch.yaml#/UserPathAggregate'
+  /fetch/profile:
+    $ref: './resources/fetch.yaml#/UserPathProfile'
+
+
+
+   
+
+
+components:
+  schemas:
+    User:
+      $ref: './schemas/user_schema.yaml'
+    Login:
+        $ref: './schemas/login_schema.yaml'
+  securitySchemes:
+    BearerAuth:
+      $ref: './schemas/security_schema.yaml'

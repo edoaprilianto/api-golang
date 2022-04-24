@@ -1,0 +1,66 @@
+UserPath:
+  post:
+    tags:
+      - User
+    summary: Signup
+    requestBody:
+     content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                Name:  
+                  type: string
+                Phone:  
+                  type: string
+                Role:  
+                  type: integer
+    responses:
+      '200':
+        $ref: '../responses/success_response.yaml'
+UserPathLogin:
+  post:
+    tags:
+      - User
+    summary: Login
+    requestBody:
+      content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                Phone:
+                  type: string
+                Password:
+                  type: string
+    responses:
+      '200':
+        $ref: '../responses/success_response.yaml'
+
+UserPathGet:
+  get:
+      tags:
+        - User
+      summary: Get User by JWT
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          $ref : "../responses/success_response.yaml"
+UserPathWithID:
+  get:
+    tags:
+      - User
+    summary: Get User by ID
+    security:
+      - BearerAuth: []
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+          example: "1"
+    responses:
+      '200':
+        $ref : "../responses/success_response.yaml"
