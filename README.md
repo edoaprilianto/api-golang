@@ -99,6 +99,7 @@ using **jwt** as ``Authorization``
 get all data private claims by **JWT**
 
 ### OUTPUT
+```json
 {
     "name": "BURKHI",
     "phone": "12345",
@@ -106,8 +107,7 @@ get all data private claims by **JWT**
     "id": 1,
     "exp": 1651397942
 }
-
-
+```
 
 
 ### JSON Manipulation
@@ -158,7 +158,8 @@ and aggreagate data by Area_propinsi and showing Total , Avg , Max , Min, Median
 #### Output
 
 ```json
-},
+[ 
+    {
     "dd": {
         "area_provinsi": "dd",
         "Price": {
@@ -178,7 +179,8 @@ and aggreagate data by Area_propinsi and showing Total , Avg , Max , Min, Median
             "max": 15000,
             "median": 15000
         }
-    },
+    }
+]
 ```
 
 
